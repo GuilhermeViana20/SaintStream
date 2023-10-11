@@ -1,17 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
+
+import NoAuthLayout from '@/layouts/NoAuth';
+
+import HomeNoAuth from '@/views/no-auth/Home';
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
-      component: () => import('@/layouts/Default.vue'),
+      component: () => NoAuthLayout,
       children: [
         {
           path: '/',
-          name: 'home',
-          component: Home
+          name: 'HomeNoAuth',
+          component: HomeNoAuth
         },
       ],
     }

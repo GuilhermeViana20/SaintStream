@@ -1,5 +1,5 @@
 <script setup>
-import Navbar from '@/components/Navbar.vue';
+import Navbar from '@/components/NavbarNoAuth.vue';
 
 </script>
 
@@ -12,6 +12,6 @@ import Navbar from '@/components/Navbar.vue';
 
 <script>
 export default {
-    name: 'DefaultLayout'
+    name: 'NoAuthLayout'
 }
 </script>
